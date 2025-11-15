@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/books")
+      .get("https://bookstore-api-lk2h.onrender.com/api/books")
       .then((res) => setBooks(res.data))
       .catch((e) => console.error("API Error:", e));
   }, []);
