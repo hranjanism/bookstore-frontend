@@ -10,7 +10,7 @@ export default function BookDetail() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/books/${id}`)
+      .get(`https://bookstore-api-lk2h.onrender.com/api/books/${id}`)
       .then((res) => setBook(res.data))
       .catch(() => setBook(null));
   }, [id]);
